@@ -122,6 +122,8 @@ M -
       SELECT * FROM #TEMP 
       WHERE [QTO TRANSACOES] = (SELECT MAX([QTO TRANSACOES]) FROM #TEMP)
       
+      
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
   P - A abordagem para tratamento dos dados e resolução foi através do SQL utilizando a ferramenta SQL Server Management Studio, pois para manipulação de dados retirados de planilhas é mais fácil sua integração e interatividade com eles. 
