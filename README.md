@@ -1,4 +1,4 @@
-# Vaga-analista-de-desenvolvimento-implanta-o-PLD-2022
+# Vaga-analista-de-desenvolvimento-implantacao-PLD-2022
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -72,7 +72,7 @@ K -
   <img src="https://user-images.githubusercontent.com/81439181/151182495-7c31eefe-f4a8-4422-8a8a-56896dc662e9.png" width="450" title="hover text">  
 </p>
 
-
+Resposta: A soma das movimentações do CPGF foi de R$ 561900795.000001.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 L - 
 
@@ -85,6 +85,7 @@ L -
 </p>
 
 
+Resposta: A soma das movimentações sigilosas foram de R$ 3.108.731,15.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 M - 
 
@@ -104,6 +105,8 @@ M -
   <img src="https://user-images.githubusercontent.com/81439181/151179769-ed751a83-68f7-4486-98a9-839e0f78acd5.png" width="500" title="hover text">  
 </p>
   
+  
+  Resposta: O órgão que mais realizou movimentações sigilosas no período foi Presidência da República com R$ 169.751,04
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
  N - 
  
@@ -126,7 +129,11 @@ M -
   <p align="center">
   <img src="https://user-images.githubusercontent.com/81439181/151180513-97d20abe-dfe9-4bff-a1b5-3b0a5c2440b9.png" width="550" title="hover text">  
 </p>
+
       
+ Resposta: O nome do portador que mais realizou saques foi Rafael Ferreira Costa.
+ A soma dos valores do saque foi de R$ 24520.
+ O nome do órgão do portador é Instituto Chico Mendes de Conservação da Biodiversidade.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
   O - 
   
@@ -147,9 +154,9 @@ M -
       
   <p align="center">
   <img src="https://user-images.githubusercontent.com/81439181/151177981-975f5edb-d7a4-4405-8812-8915b3aa9f78.png" width="500" title="hover text">  
-</p>
-      
-
+</p>         
+ 
+Resposta: O nome do favorecido que mais recebeu compras utilizando o CPGF foi: SEM INFORMAÇÃO, com 126 transações e no valor de R$ 67421,29.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
   P - A abordagem para tratamento dos dados e resolução foi através do SQL utilizando a ferramenta SQL Server Management Studio, pois para manipulação de dados retirados de planilhas é mais fácil sua integração e interatividade com eles. 
