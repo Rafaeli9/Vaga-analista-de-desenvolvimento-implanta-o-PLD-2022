@@ -77,7 +77,7 @@ Resposta: A soma das movimentações do CPGF foi de R$ 561900795.000001.
 L - 
 
     SELECT 
-    SUM([VALOR TRANSAÇÃO]) AS SOMA FROM "EXEMPLO" WHERE [TRANSAÇÃO] = 'Informações protegidas por sigilo'
+    SUM([VALOR TRANSAÇÃO]) AS SOMA FROM "NOME DA TABELA" WHERE [TRANSAÇÃO] = 'Informações protegidas por sigilo'
 
 
    <p align="center">
@@ -93,7 +93,7 @@ M -
          [CÓDIGO ÓRGÃO]
         ,[NOME ÓRGÃO]
         , SUM([VALOR TRANSAÇÃO]) AS [TOTAL]
-    FROM [CPGF2].[dbo].[EXEMPLO]
+    FROM [NOME DO BANCO DE DADOS].[dbo].[NOME DA TABELA]
 
     WHERE [TRANSAÇÃO] = 'Informações protegidas por sigilo'
 
@@ -116,7 +116,7 @@ M -
       ,COUNT([TRANSAÇÃO]) AS [QTO SAQUES]
       ,SUM([VALOR TRANSAÇÃO]) AS [TOTAL SAQUES]
       INTO #TEMP 
-      FROM [CPGF2].[dbo].[EXEMPLO]
+      FROM [NOME DO BANCO DE DADOS].[dbo].[NOME DA TABELA]
       WHERE TRANSAÇÃO = 'SAQUE CASH/ATM BB' 
 
       GROUP BY [NOME ÓRGÃO], [NOME PORTADOR]
