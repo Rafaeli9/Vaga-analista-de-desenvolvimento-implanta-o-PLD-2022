@@ -66,26 +66,43 @@ K -
 
     SELECT 
     SUM([VALOR TRANSAÇÃO]) FROM "'NOME DA TABELA'"
-    
+ 
+
+   <p align="center">
+  <img src="https://user-images.githubusercontent.com/81439181/151182495-7c31eefe-f4a8-4422-8a8a-56896dc662e9.png" width="450" title="hover text">  
+</p>
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 L - 
 
     SELECT 
-    SUM([VALOR TRANSAÇÃO]) AS SOMA FROM "'NOME DA TABELA'" WHERE TRANSAÇÃO = 'Informações protegidas por sigilo'
-    
+    SUM([VALOR TRANSAÇÃO]) AS SOMA FROM "EXEMPLO" WHERE [TRANSAÇÃO] = 'Informações protegidas por sigilo'
+
+
+   <p align="center">
+  <img src="https://user-images.githubusercontent.com/81439181/151182128-8db7253e-d277-4fbd-9b9b-e07b1ce69850.png" width="650" title="hover text">  
+</p>
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 M - 
 
-    SELECT
-         [CODIGO ÓRGÃO]
+     SELECT
+         [CÓDIGO ÓRGÃO]
         ,[NOME ÓRGÃO]
         , SUM([VALOR TRANSAÇÃO]) AS [TOTAL]
-    FROM [NOME DO BANCO DE DADOS].[dbo].['NOME DA TABELA']
+    FROM [CPGF2].[dbo].[EXEMPLO]
 
     WHERE [TRANSAÇÃO] = 'Informações protegidas por sigilo'
 
-    GROUP BY [CODIGO ÓRGÃO], [NOME ÓRGÃO]
+    GROUP BY [CÓDIGO ÓRGÃO], [NOME ÓRGÃO]
     ORDER BY [TOTAL] DESC
+
+
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/81439181/151179769-ed751a83-68f7-4486-98a9-839e0f78acd5.png" width="500" title="hover text">  
+</p>
   
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
  N - 
@@ -93,17 +110,22 @@ M -
     SELECT 
       [NOME ÓRGÃO]
       ,[NOME PORTADOR]
-      ,COUNT(TRANSAÇÃO) AS [QTO SAQUES]
+      ,COUNT([TRANSAÇÃO]) AS [QTO SAQUES]
       ,SUM([VALOR TRANSAÇÃO]) AS [TOTAL SAQUES]
       INTO #TEMP 
-      FROM [NOME DO BANCO DE DADOS].[dbo].['NOME DA TABELA']
+      FROM [CPGF2].[dbo].[EXEMPLO]
       WHERE TRANSAÇÃO = 'SAQUE CASH/ATM BB' 
 
-      GROUP BY [NOME ÓRGÃO], NOME PORTADOR
+      GROUP BY [NOME ÓRGÃO], [NOME PORTADOR]
 
-      SELECT [NOME ÓRGÃO], NOME PORTADOR,[QTO SAQUES], [TOTAL SAQUES] FROM #TEMP
+      SELECT [NOME ÓRGÃO], [NOME PORTADOR],[QTO SAQUES], [TOTAL SAQUES] FROM #TEMP
       WHERE [QTO SAQUES] = (SELECT MAX([QTO SAQUES]) FROM #TEMP)
-      GROUP BY [NOME ÓRGÃO], NOME PORTADOR, [QTO SAQUES], [TOTAL SAQUES]
+      GROUP BY [NOME ÓRGÃO], [NOME PORTADOR], [QTO SAQUES], [TOTAL SAQUES]
+
+
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/81439181/151180513-97d20abe-dfe9-4bff-a1b5-3b0a5c2440b9.png" width="550" title="hover text">  
+</p>
       
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
   O - 
@@ -122,6 +144,10 @@ M -
       SELECT * FROM #TEMP 
       WHERE [QTO TRANSACOES] = (SELECT MAX([QTO TRANSACOES]) FROM #TEMP)
       
+      
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/81439181/151177981-975f5edb-d7a4-4405-8812-8915b3aa9f78.png" width="500" title="hover text">  
+</p>
       
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
